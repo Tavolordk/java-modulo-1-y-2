@@ -18,7 +18,7 @@ public class RectanguloServiceImpl implements FigureService {
 
     @Override
     public double calcularPerimetro() {
-        return 0;
+        return 3*this.largo;
     }
 
     public static class Builder{

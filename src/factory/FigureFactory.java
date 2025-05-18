@@ -21,14 +21,20 @@ public class FigureFactory {
                 System.out.println("INSERTA LADO");
                 double lado =scanner.nextDouble();
                 scanner.close();
-                return new CuadradoServiceImpl.Builder().lado(lado).build();
+                return new CuadradoServiceImpl.
+                        Builder().
+                        lado(lado).
+                        build();
             case "rectangulo":
                 System.out.println("INSERTA LARGO");
                 double largo=scanner.nextDouble();
                 System.out.println("INSERTA ANCHO");
                 double ancho=scanner.nextDouble();
                 scanner.close();
-                return new RectanguloServiceImpl.Builder().largo(largo).ancho(ancho).build();
+                return new RectanguloServiceImpl
+                        .Builder().
+                        largo(largo).
+                        ancho(ancho).build();
             case "triangulo":
                 System.out.println("INSERTA ALTURA");
                 double altura=scanner.nextDouble();
